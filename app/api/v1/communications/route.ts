@@ -97,3 +97,19 @@ export async function GET() {
         );
     }
 }
+
+export async function POST() {
+    try {
+        const data = {
+            "message": "Ok",
+            "recipients": "Persons Email"
+        }
+
+        return NextResponse.json(data);
+    } catch (error) {
+        return NextResponse.json(
+            { error: (error as Error).message || "An unexpected error occurred" },
+            { status: 500 }
+        );
+    }
+}
