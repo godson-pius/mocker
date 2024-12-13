@@ -6,48 +6,21 @@ export async function GET() {
             "data": [
                 {
                     "id": "1",
-                    "recipient": "jane.doe@example.com",
-                    "sender": "john.smith@example.com",
-                    "date": "2024-12-05",
-                    "subject": "Project Update",
-                    "description": "The project is progressing well, and we are on track for completion by the deadline.",
-                    "status": "In Progress"
+                    "createdBy": "Alice Johnson",
+                    "note": "Followed up with the client for additional details.",
+                    "date": "2024-12-11"
                 },
                 {
                     "id": "2",
-                    "recipient": "mark.adams@example.com",
-                    "sender": "jane.doe@example.com",
-                    "date": "2024-12-04",
-                    "subject": "Meeting Reminder",
-                    "description": "This is a reminder for our meeting scheduled tomorrow at 10:00 AM.",
-                    "status": "Completed"
+                    "createdBy": "Bob Smith",
+                    "note": "Updated the project timeline based on new requirements.",
+                    "date": "2024-12-10"
                 },
                 {
                     "id": "3",
-                    "recipient": "team@example.com",
-                    "sender": "project.manager@example.com",
-                    "date": "2024-12-03",
-                    "subject": "Weekly Report",
-                    "description": "Please find the attached weekly report for your review.",
-                    "status": "Pending"
-                },
-                {
-                    "id": "4",
-                    "recipient": "client@example.com",
-                    "sender": "support@example.com",
-                    "date": "2024-12-02",
-                    "subject": "Support Request Update",
-                    "description": "Your support request has been escalated to the technical team for further assistance.",
-                    "status": "In Progress"
-                },
-                {
-                    "id": "5",
-                    "recipient": "ceo@example.com",
-                    "sender": "assistant@example.com",
-                    "date": "2024-12-01",
-                    "subject": "Monthly Financial Overview",
-                    "description": "Attached is the financial overview for November 2024. Please let me know if you need any clarifications.",
-                    "status": "Reviewed"
+                    "createdBy": "Catherine Brown",
+                    "note": "Reviewed and approved the final design.",
+                    "date": "2024-12-09"
                 }
             ],
             "links": {
