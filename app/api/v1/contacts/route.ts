@@ -1,5 +1,21 @@
 import { NextResponse } from "next/server";
 
+export async function POST() {
+    try {
+        const data = {
+            "message": "Contact Created",
+            "status": "success"
+        }
+
+        return NextResponse.json(data);
+    } catch (error) {
+        return NextResponse.json(
+            { error: (error as Error).message || "An unexpected error occurred" },
+            { status: 500 }
+        );
+    }
+}
+
 export async function GET() {
     try {
         const data = {
