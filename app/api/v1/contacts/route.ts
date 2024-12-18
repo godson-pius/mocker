@@ -1279,7 +1279,7 @@ export async function GET() {
     }
 }
 
-export async function PATCH() {
+export async function PUT() {
     try {
         const data = {
             "message": "Contact edited",
