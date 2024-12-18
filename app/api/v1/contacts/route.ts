@@ -1278,3 +1278,19 @@ export async function GET() {
         );
     }
 }
+
+export async function PATCH() {
+    try {
+        const data = {
+            "message": "Contact edited",
+            "status": "success"
+        }
+
+        return NextResponse.json(data);
+    } catch (error) {
+        return NextResponse.json(
+            { error: (error as Error).message || "An unexpected error occurred" },
+            { status: 500 }
+        );
+    }
+}
